@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset ('bundles/CodeToBeWildMap/css/homepage.css') }}" type="text/css"/>
+    {% endblock %}
+
+{% block body %}
+    <p>Accueil</p>
+    <a href="{{ path ('candidats_show') }}">blabla</a>
+
+    <a class="twitter-timeline" href="https://twitter.com/WildCodeSchool" data-widget-id="570620543062515712">Tweets de @WildCodeSchool</a>
+    <a href="https://twitter.com/intent/tweet?button_hashtag=CodeToBeWild" class="twitter-hashtag-button" data-size="large" data-related="WildCodeSchool">Tweet #project</a>
+
+    <a href="https://twitter.com/WildCodeSchool" class="twitter-follow-button" data-show-count="true">Suivre sur twitter</a>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <div class="fb-like" data-href="https://www.facebook.com/wildcodeschool" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+    <div class="fb-comments" data-href="https://www.facebook.com/wildcodeschool?fref=photo" data-numposts="10" data-colorscheme="dark"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '916695215037793',
+                xfbml      : true,
+                version    : 'v2.2'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+{% endblock %}

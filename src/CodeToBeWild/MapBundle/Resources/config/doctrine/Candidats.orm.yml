@@ -1,0 +1,30 @@
+CodeToBeWild\MapBundle\Entity\Candidats:
+    type: entity
+    table: null
+    repositoryClass: CodeToBeWild\MapBundle\Entity\CandidatsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            column: Name
+        age:
+            type: string
+            length: '2'
+            column: Age
+        sex:
+            type: boolean
+            column: Sex
+        ville:
+            type: string
+            length: 255
+            column: Ville
+        bourse:
+            type: boolean
+            column: Bourse
+    lifecycleCallbacks: {  }

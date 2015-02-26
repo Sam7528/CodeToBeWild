@@ -1,0 +1,6 @@
+code_to_be_wild_map_homepage:
+    path:     /
+    defaults: { _controller: CodeToBeWildMapBundle:Default:index }
+candidats_show:
+    path:   /candidats
+    defaults:  { _controller: CodeToBeWildMapBundle:Default:candidats }
